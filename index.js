@@ -65,7 +65,6 @@ fibonacciSubmitBtn.addEventListener("click", (event) => {
 oddEvenFilterSubmitBtn.addEventListener("click", (event) => {
     event.preventDefault();
     const userInput = oddEvenFilter.value.split(' ');
-    console.log(userInput);
     const { evenNumbers, oddNumbers } = filterOddEven(userInput);
     result2.innerHTML = evenNumbers;
     result3.innerHTML = oddNumbers;
