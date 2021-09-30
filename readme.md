@@ -1,1 +1,1 @@
-**Please click on index.js file.**
+**Please click on index.html file.**
