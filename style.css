@@ -1,0 +1,66 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.wrapper {
+    display: flex;
+    width: 100%;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.header {
+    padding: 20px 0 20px 0;
+    text-align: center;
+}
+
+.contents {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.box {
+    width: 33.33%;
+}
+
+.results-container {
+    padding: 30px 0 0 10px;
+}
+
+input[type=text] {
+    width: 90%;
+    padding: 10px 5px;
+    margin: 8px 0;
+}
+
+.filter-odd-even,
+.fibonacci,
+.odd-even-check {
+    height: 40px;
+    width: 30%;
+    border-radius: 50px;
+    background-color: #1976D2;
+    font-size: 16px;
+    letter-spacing: 1.5px;
+    color: #FFFFFF;
+    border: none;
+    display: inline-block;
+    text-decoration: none;
+    cursor: pointer;
+    text-align: center;
+}
+
+.filter-odd-even:hover,
+.odd-even-check:hover,
+.fibonacci:hover {
+    background-color: #FFFFFF;
+    border: 2px solid #1976D2;
+    color: #1976D2;
+    font-weight: bold;
+}
