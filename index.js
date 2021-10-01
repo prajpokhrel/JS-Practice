@@ -4,10 +4,12 @@ function checkEvenOrOdd(value) {
 
 // Solution without Recursion - This is more efficient.
 function fibonacciSeries(value) {
-    if (value === 0) {
-        return 0;
-    } else if (value === 1) {
-        return 1;
+    if (parseInt(value) < 0 || value === "") {
+        return ["Please enter a positive integer."]
+    } else if (parseInt(value) === 0) {
+        return [0];
+    } else if (parseInt(value) === 1) {
+        return [1];
     } else {
         let fibonacciNumbers = [0, 1];
         for (let i = 2; i < value; i++) {
@@ -40,8 +42,13 @@ const result3 = document.querySelector('.result3');
 
 oddEvenCheckSubmitBtn.addEventListener("click", (event) => {
     event.preventDefault();
-    const result = checkEvenOrOdd(oddEvenCheck.value);
-    result1.innerHTML = result ? "The given number is <b>Even<b>." : "The given number is <b>Odd<b>.";
+    const userInput = oddEvenCheck.value;
+    if (userInput === "") {
+        result1.innerHTML = "Please enter a number..";
+    } else {
+        const result = checkEvenOrOdd(parseInt(userInput));
+        result1.innerHTML = result ? "The given number is <b>Even<b>." : "The given number is <b>Odd<b>.";
+    }
 });
 
 fibonacciSubmitBtn.addEventListener("click", (event) => {
