@@ -7,9 +7,9 @@ function fibonacciSeries(value) {
     if (parseInt(value) < 0 || value === "") {
         return ["Please enter a positive integer."]
     } else if (parseInt(value) === 0) {
-        return [0];
+        return ["Please enter a number greater than 0."];
     } else if (parseInt(value) === 1) {
-        return [1];
+        return [0];
     } else {
         let fibonacciNumbers = [0, 1];
         for (let i = 2; i < value; i++) {
